@@ -44,6 +44,7 @@ namespace MissionPlanner.Utilities
 
         static List<PointLatLngAlt> cache = new List<PointLatLngAlt>();
 
+
         public static List<PointLatLngAlt> getAirports(PointLatLngAlt centerpoint)
         {
             lock (locker)
@@ -60,6 +61,7 @@ namespace MissionPlanner.Utilities
                 }
 
                 newairports = false;
+                
 
                 log.Info("getAirports - regen list");
 
@@ -106,6 +108,12 @@ namespace MissionPlanner.Utilities
         public static void ReadOpenflights(string fn)
         {
             string[] lines = File.ReadAllLines(fn);
+           
+            /* 
+            var ucrAP = new PointLatLngAlt(33.9756, 117.3311, 0, "UCR Airport");
+            AddAirport(ucrAP);
+            Console.Write("added UCR airport");
+            */
 
             foreach (var line in lines)
             {
@@ -141,12 +149,17 @@ namespace MissionPlanner.Utilities
                     AddAirport(newap);
                     //Console.WriteLine(newap);
                 }
+                
                 catch { }
             }
+            
         }
 
         public static void ReadOurairports(string fn)
         {
+            var ucrAP = new PointLatLngAlt(33.9756, -117.3311, 0, "UCR Airport");
+            AddAirport(ucrAP);
+            Console.Write("added UCR airport");
             string[] lines = File.ReadAllLines(fn);
 
             foreach (var line in lines)
