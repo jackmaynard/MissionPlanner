@@ -71,6 +71,7 @@ namespace MissionPlanner.GCSViews
         internal static GMapOverlay geofence;
         internal static GMapOverlay rallypointoverlay;
         internal static GMapOverlay poioverlay = new GMapOverlay("POI"); // poi layer
+        internal static GMapOverlay rectangle_polygons;
 
         Dictionary<Guid, Form> formguids = new Dictionary<Guid, Form>();
 
@@ -307,6 +308,11 @@ namespace MissionPlanner.GCSViews
             gMapControl1.Overlays.Add(rallypointoverlay);
 
             gMapControl1.Overlays.Add(poioverlay);
+
+            rectangle_polygons = new GMapOverlay("rectangle_polygons test");
+            gMapControl1.Overlays.Add(rectangle_polygons);
+            addpolygonmarker("testPolygon", 33.9756, -117.22, 0, Color.Blue, rectangle_polygons);
+
 
             try
             {
@@ -3563,6 +3569,11 @@ namespace MissionPlanner.GCSViews
             Vibration frm = new Vibration();
             frm.TopMost = true;
             frm.Show();
+        }
+
+        private void gMapControl1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

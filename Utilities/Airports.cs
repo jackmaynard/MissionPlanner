@@ -196,6 +196,7 @@ namespace MissionPlanner.Utilities
                     //double alt = double.Parse(items[6 + latOffset].Trim('"')) * 0.3048;
 
                     var newap = new PointLatLngAlt(lat, lng, alt, name);
+                    
 
                     AddAirport(newap);
                     //Console.WriteLine(newap);

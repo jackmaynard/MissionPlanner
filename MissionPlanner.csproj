@@ -431,6 +431,12 @@
     <Compile Include="Controls\PreFlightChecklist.designer.cs">
       <DependentUpon>PreFlightChecklist.cs</DependentUpon>
     </Compile>
+    <Compile Include="GCSViews\Rectangles_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GCSViews\Rectangles_form.Designer.cs">
+      <DependentUpon>Rectangles_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeoRef\Georefimage.Designer.cs">
       <DependentUpon>georefimage.cs</DependentUpon>
     </Compile>
@@ -1142,6 +1148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\InitialSetup.zh-TW.resx">
       <DependentUpon>InitialSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\Rectangles_form.resx">
+      <DependentUpon>Rectangles_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Simulation.ja-JP.resx">
       <DependentUpon>Simulation.cs</DependentUpon>

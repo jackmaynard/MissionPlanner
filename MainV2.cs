@@ -17,6 +17,7 @@ using MissionPlanner.Controls;
 using MissionPlanner.Comms;
 using Transitions;
 using System.Speech.Synthesis;
+using MissionPlanner.GCSViews.UCR_Rectangles;
 
 namespace MissionPlanner
 {
@@ -311,6 +312,11 @@ namespace MissionPlanner
 
         public MainV2()
         {
+            var newForm = new Rectangles_form();
+            var newForm2 = new Rectangles_form();
+            newForm.Show();
+            newForm2.Show();
+
             log.Info("Mainv2 ctor");
 
             // set this before we reset it
@@ -2465,6 +2471,12 @@ namespace MissionPlanner
                 frm.Show();
                 return true;
             }
+            if (keyData == (Keys.Control | Keys.R)) // new rectangle form
+            {
+                var newRectangleForm = new Rectangles_form();
+                newRectangleForm.Show();
+                return true;
+            }
             /*if (keyData == (Keys.Control | Keys.S)) // screenshot
             {
                 ScreenShot();
@@ -2953,6 +2965,11 @@ namespace MissionPlanner
             new ConnectionOptions().Show(this);
         }
 
-
+        private void MainV2_Load(object sender, EventArgs e)
+        {
+            //MissionPlanner.GCSViews.Rectangles_form
+            //var newForm = new Rectangles_form();
+            //newForm.Show();
+        }
     }
 }
