@@ -28,47 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1_window = new System.Windows.Forms.TextBox();
-            this.textBox2_window = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox_latitude2 = new System.Windows.Forms.TextBox();
+            this.textBox_longitude2 = new System.Windows.Forms.TextBox();
+            this.textBox_latitude3 = new System.Windows.Forms.TextBox();
+            this.textBox_longitude3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox_latitude = new System.Windows.Forms.TextBox();
-            this.textBox_lon = new System.Windows.Forms.TextBox();
+            this.textBox_latitude1 = new System.Windows.Forms.TextBox();
+            this.textBox_longitude1 = new System.Windows.Forms.TextBox();
+            this.textBox_latitude4 = new System.Windows.Forms.TextBox();
+            this.textBox_longitude4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1_window
+            // textBox_latitude2
             // 
-            this.textBox1_window.Location = new System.Drawing.Point(12, 156);
-            this.textBox1_window.Name = "textBox1_window";
-            this.textBox1_window.Size = new System.Drawing.Size(100, 20);
-            this.textBox1_window.TabIndex = 0;
-            this.textBox1_window.Text = "Window X ";
-            this.textBox1_window.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox_latitude2.Location = new System.Drawing.Point(12, 39);
+            this.textBox_latitude2.Name = "textBox_latitude2";
+            this.textBox_latitude2.Size = new System.Drawing.Size(100, 20);
+            this.textBox_latitude2.TabIndex = 0;
+            this.textBox_latitude2.Text = "Latitude 2";
             // 
-            // textBox2_window
+            // textBox_longitude2
             // 
-            this.textBox2_window.Location = new System.Drawing.Point(175, 155);
-            this.textBox2_window.Name = "textBox2_window";
-            this.textBox2_window.Size = new System.Drawing.Size(100, 20);
-            this.textBox2_window.TabIndex = 1;
-            this.textBox2_window.Text = "Window Y";
+            this.textBox_longitude2.Location = new System.Drawing.Point(172, 39);
+            this.textBox_longitude2.Name = "textBox_longitude2";
+            this.textBox_longitude2.Size = new System.Drawing.Size(100, 20);
+            this.textBox_longitude2.TabIndex = 1;
+            this.textBox_longitude2.Text = "Longitude 2";
             // 
-            // textBox3
+            // textBox_latitude3
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Length";
+            this.textBox_latitude3.Location = new System.Drawing.Point(12, 65);
+            this.textBox_latitude3.Name = "textBox_latitude3";
+            this.textBox_latitude3.Size = new System.Drawing.Size(100, 20);
+            this.textBox_latitude3.TabIndex = 2;
+            this.textBox_latitude3.Text = "Latitude 3";
             // 
-            // textBox4
+            // textBox_longitude3
             // 
-            this.textBox4.Location = new System.Drawing.Point(174, 182);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "Width";
+            this.textBox_longitude3.Location = new System.Drawing.Point(172, 65);
+            this.textBox_longitude3.Name = "textBox_longitude3";
+            this.textBox_longitude3.Size = new System.Drawing.Size(100, 20);
+            this.textBox_longitude3.TabIndex = 3;
+            this.textBox_longitude3.Text = "Longitude 3";
             // 
             // button1
             // 
@@ -80,34 +81,52 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBox_latitude
+            // textBox_latitude1
             // 
-            this.textBox_latitude.Location = new System.Drawing.Point(12, 13);
-            this.textBox_latitude.Name = "textBox_latitude";
-            this.textBox_latitude.Size = new System.Drawing.Size(100, 20);
-            this.textBox_latitude.TabIndex = 5;
-            this.textBox_latitude.Text = "X latitude";
+            this.textBox_latitude1.Location = new System.Drawing.Point(12, 13);
+            this.textBox_latitude1.Name = "textBox_latitude1";
+            this.textBox_latitude1.Size = new System.Drawing.Size(100, 20);
+            this.textBox_latitude1.TabIndex = 5;
+            this.textBox_latitude1.Text = "Latitude 1";
             // 
-            // textBox_lon
+            // textBox_longitude1
             // 
-            this.textBox_lon.Location = new System.Drawing.Point(174, 12);
-            this.textBox_lon.Name = "textBox_lon";
-            this.textBox_lon.Size = new System.Drawing.Size(100, 20);
-            this.textBox_lon.TabIndex = 6;
-            this.textBox_lon.Text = "Y Latitude";
+            this.textBox_longitude1.Location = new System.Drawing.Point(172, 12);
+            this.textBox_longitude1.Name = "textBox_longitude1";
+            this.textBox_longitude1.Size = new System.Drawing.Size(100, 20);
+            this.textBox_longitude1.TabIndex = 6;
+            this.textBox_longitude1.Text = "Longitude 1";
+            // 
+            // textBox_latitude4
+            // 
+            this.textBox_latitude4.Location = new System.Drawing.Point(12, 92);
+            this.textBox_latitude4.Name = "textBox_latitude4";
+            this.textBox_latitude4.Size = new System.Drawing.Size(100, 20);
+            this.textBox_latitude4.TabIndex = 7;
+            this.textBox_latitude4.Text = "Latitude 4";
+            // 
+            // textBox_longitude4
+            // 
+            this.textBox_longitude4.Location = new System.Drawing.Point(172, 91);
+            this.textBox_longitude4.Name = "textBox_longitude4";
+            this.textBox_longitude4.Size = new System.Drawing.Size(100, 20);
+            this.textBox_longitude4.TabIndex = 8;
+            this.textBox_longitude4.Text = "Longitude 4";
             // 
             // Rectangles_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.textBox_lon);
-            this.Controls.Add(this.textBox_latitude);
+            this.Controls.Add(this.textBox_longitude4);
+            this.Controls.Add(this.textBox_latitude4);
+            this.Controls.Add(this.textBox_longitude1);
+            this.Controls.Add(this.textBox_latitude1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2_window);
-            this.Controls.Add(this.textBox1_window);
+            this.Controls.Add(this.textBox_longitude3);
+            this.Controls.Add(this.textBox_latitude3);
+            this.Controls.Add(this.textBox_longitude2);
+            this.Controls.Add(this.textBox_latitude2);
             this.Name = "Rectangles_form";
             this.Text = "Rectangles_form";
             this.ResumeLayout(false);
@@ -117,12 +136,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1_window;
-        private System.Windows.Forms.TextBox textBox2_window;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox_latitude2;
+        private System.Windows.Forms.TextBox textBox_longitude2;
+        private System.Windows.Forms.TextBox textBox_latitude3;
+        private System.Windows.Forms.TextBox textBox_longitude3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox_latitude;
-        private System.Windows.Forms.TextBox textBox_lon;
+        private System.Windows.Forms.TextBox textBox_latitude1;
+        private System.Windows.Forms.TextBox textBox_longitude1;
+        private System.Windows.Forms.TextBox textBox_latitude4;
+        private System.Windows.Forms.TextBox textBox_longitude4;
     }
 }

@@ -47,7 +47,7 @@ namespace MissionPlanner.GCSViews
         public bool quickadd;
         bool isonline = true;
         bool sethome;
-        bool polygongridmode;
+        public bool polygongridmode;
         Hashtable param = new Hashtable();
         bool splinemode;
         altmode currentaltmode = altmode.Relative;
@@ -927,7 +927,7 @@ namespace MissionPlanner.GCSViews
         /// <param name="lng"></param>
         /// <param name="lat"></param>
         /// <param name="alt"></param>
-        private void addpolygonmarker(string tag, double lng, double lat, int alt, Color? color)
+        public void addpolygonmarker(string tag, double lng, double lat, int alt, Color? color)
         {
             try
             {
@@ -963,7 +963,7 @@ namespace MissionPlanner.GCSViews
             catch (Exception) { }
         }
 
-        private void addpolygonmarkergrid(string tag, double lng, double lat, int alt)
+        public void addpolygonmarkergrid(string tag, double lng, double lat, int alt)
         {
             try
             {
@@ -2507,7 +2507,7 @@ namespace MissionPlanner.GCSViews
 
         // polygons
         GMapPolygon wppolygon;
-        internal GMapPolygon drawnpolygon;
+        public GMapPolygon drawnpolygon;
         GMapPolygon geofencepolygon;
 
 
@@ -2518,7 +2518,7 @@ namespace MissionPlanner.GCSViews
         public static GMapOverlay polygonsoverlay; // where the track is drawn
         public static GMapOverlay airportsoverlay;
         public static GMapOverlay poioverlay = new GMapOverlay("POI"); // poi layer
-        GMapOverlay drawnpolygonsoverlay;
+        public GMapOverlay drawnpolygonsoverlay;
         GMapOverlay kmlpolygonsoverlay;
         GMapOverlay geofenceoverlay;
         static GMapOverlay rallypointoverlay;

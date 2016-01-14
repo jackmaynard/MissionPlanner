@@ -1435,7 +1435,7 @@ namespace MissionPlanner.GCSViews
             });
         }
 
-        private void addpolygonmarker(string tag, double lng, double lat, int alt, Color? color, GMapOverlay overlay)
+        public void addpolygonmarker(string tag, double lng, double lat, int alt, Color? color, GMapOverlay overlay)
         {
             try
             {
